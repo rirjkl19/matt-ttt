@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "565544611191",
+    "project_id": "matt-ttt",
+    "storage_bucket": "matt-ttt.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:565544611191:android:339d4a20e283cd3ca00572",
+        "android_client_info": {
+          "package_name": "app.matt.ttt"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1RxuFDMaYulSiRJBc7zDZeBntbF8JtoY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
