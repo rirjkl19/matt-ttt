@@ -48,6 +48,15 @@ class GameBoard extends HookConsumerWidget {
             child: const Text('Start Game'),
           ),
         ),
+        Visibility(
+          visible: boardState.hasGameEnded,
+          child: ElevatedButton(
+            onPressed: () {
+              ref.read(gameBoardNotifierProvider.notifier).startGame();
+            },
+            child: const Text('Restart Game'),
+          ),
+        )
       ],
     );
   }

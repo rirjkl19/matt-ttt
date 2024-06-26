@@ -11,9 +11,9 @@ class GameBanner extends ConsumerWidget {
     final gameState = ref.watch(gameBoardNotifierProvider);
 
     final bannerLabel = switch (gameState.currentEntity) {
-      GameEntity.system => 'Waiting...',
-      GameEntity.player1 => 'Player 1\'s turn',
-      GameEntity.player2 => 'Player 2\'s turn',
+      GameEntity.system => gameState.hasGameEnded ? 'Tie' : 'Waiting...',
+      GameEntity.player1 => gameState.hasGameEnded ? 'Player 1 won!' : 'Player 1\'s turn',
+      GameEntity.player2 => gameState.hasGameEnded ? 'Player 2 won!' : 'Player 2\'s turn',
     };
 
     return Center(

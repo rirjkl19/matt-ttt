@@ -9,7 +9,7 @@ class TttApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       title: 'Matt TTT',
-      initialRoute: AppRoutes.home,
+      initialRoute: AppRoutes.root,
       onGenerateRoute: AppRoutes.onGenerateRoute,
     );
   }
