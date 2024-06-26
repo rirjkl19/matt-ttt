@@ -7,7 +7,7 @@ import 'package:ttt/feature/home/presentation/pages/home_page.dart';
 final class AppRoutes {
   static const String auth = '/auth';
   static const String game = '/game';
-  static const String home = '/home';
+  static const String home = '/';
 
   static Route<dynamic> onGenerateRoute(RouteSettings settings) {
     switch (settings.name) {
