@@ -5,12 +5,12 @@ class GameTile extends StatelessWidget {
   const GameTile({super.key, required this.box, required this.onTap});
 
   final GameBox box;
-  final ValueChanged<GameBox> onTap;
+  final VoidCallback onTap;
 
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: () => onTap.call(box),
+      onTap: onTap.call,
       child: Container(
         decoration: BoxDecoration(
           color: Colors.transparent,

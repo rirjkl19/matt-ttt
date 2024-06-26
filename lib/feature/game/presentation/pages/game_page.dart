@@ -26,7 +26,6 @@ class GamePage extends HookConsumerWidget {
         children: [
           const GameBanner(),
           Expanded(
-            flex: 3,
             child: Center(
               child: SizedBox(
                 width: boardWidthSize,

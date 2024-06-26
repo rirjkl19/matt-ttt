@@ -1,16 +1,19 @@
-# ttt
+# ttt (Tic Tac Toe)
 
-A new Flutter project.
+A (_very_) simple flutter project I created for CoDev.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+It is a simple Tic Tac Toe game that can be played by two players (or yourself). The game is played on a 3x3 grid. The first player is represented by ❌ and the second player is represented by ⭕️.
 
-A few resources to get you started if this is your first Flutter project:
+## Screenshots
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Features
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- [X] Two player game
+- [X] Reset button to restart the game
+- [X] Display the winner
+- [X] Display a draw message if the game is a draw
+- [ ] ~~Highlighting the winning row, column or diagonal~~
+- [ ] ~~Firebase integration for multiplayer game~~
+- [ ] ~~AI for single player game~~

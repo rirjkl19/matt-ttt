@@ -9,6 +9,7 @@ class GameBoardNotifier extends AutoDisposeNotifier<GameState> {
   @override
   GameState build() => GameWaitingState();
 
+  /// Start a new game
   void startGame() {
     state = GamePlayingState(
       game: List.generate(9, (index) => GameBox(index: index)),
@@ -16,6 +17,7 @@ class GameBoardNotifier extends AutoDisposeNotifier<GameState> {
     );
   }
 
+  /// Make a move in the game
   void move(int index, GameEntity entity) {
     final box = state.game[index];
     final newBox = GameBox(index: box.index, value: entity.value);
@@ -33,6 +35,7 @@ class GameBoardNotifier extends AutoDisposeNotifier<GameState> {
     }
   }
 
+  /// Check if the game has been won
   bool _checkWin(GameEntity entity) {
     final winPatterns = [
       [0, 1, 2],

@@ -28,7 +28,7 @@ class GameBoard extends HookConsumerWidget {
                 final box = boardState.game[index];
                 return GameTile(
                   box: box,
-                  onTap: (box) {
+                  onTap: () {
                     if (box.value != null) return;
                     ref
                         .read(gameBoardNotifierProvider.notifier)
@@ -42,18 +42,14 @@ class GameBoard extends HookConsumerWidget {
         Visibility(
           visible: boardState is GameWaitingState,
           child: ElevatedButton(
-            onPressed: () {
-              ref.read(gameBoardNotifierProvider.notifier).startGame();
-            },
+            onPressed: ref.read(gameBoardNotifierProvider.notifier).startGame,
             child: const Text('Start Game'),
           ),
         ),
         Visibility(
           visible: boardState.hasGameEnded,
           child: ElevatedButton(
-            onPressed: () {
-              ref.read(gameBoardNotifierProvider.notifier).startGame();
-            },
+            onPressed: ref.read(gameBoardNotifierProvider.notifier).startGame,
             child: const Text('Restart Game'),
           ),
         )
